@@ -6,12 +6,5 @@
 
 int main()
 {
-//	auto r1 = gzwrite(0, 0, 0);
-//	auto r2 = BZ2_bzCompressInit(0, 0, 0, 0);
-
-//	boost::filesystem::path p("hello");
-
-	char c = 500;
-
 	return 0;
 }
