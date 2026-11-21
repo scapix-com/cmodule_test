@@ -52,9 +52,7 @@ find_package(pybind11 REQUIRED)
 target_link_libraries(${target} PRIVATE pybind11::module)
 set_target_properties(${target} PROPERTIES PREFIX "${PYTHON_MODULE_PREFIX}" SUFFIX "${PYTHON_MODULE_EXTENSION}")
 
-# curl option
-#set(CMAKE_USE_OPENSSL ON)
-
+set(CURL_USE_OPENSSL OFF)
 find_package(CURL REQUIRED)
 target_link_libraries(${target} PRIVATE CURL::libcurl)
 
